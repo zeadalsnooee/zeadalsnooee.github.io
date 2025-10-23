@@ -1,17 +1,140 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>موقعي الأول</title>
+  <title>الإجازات المرضية - صحة</title>
   <style>
-    body { font-family: sans-serif; text-align: center; background: #f2f2f2; }
-    h1 { color: #2b8a3e; margin-top: 50px; }
-    p { color: #555; }
+    body {
+      font-family: 'Tahoma', sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      background-color: white;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 24px;
+      margin-left: 8px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1d4e89;
+      margin-top: 30px;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      text-align: right;
+    }
+
+    p {
+      color: #6c757d;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #333;
+      font-weight: bold;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      background-color: #1d4e89;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button.secondary {
+      background-color: #337ab7;
+      margin-top: 10px;
+    }
+
+    footer {
+      background-color: #1d4e89;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 40px;
+    }
+
+    footer img {
+      height: 32px;
+      margin: 0 10px;
+      vertical-align: middle;
+    }
+
+    .logos {
+      margin: 10px 0;
+    }
   </style>
 </head>
 <body>
-  <h1>مرحباً بكم في موقعي الإلكتروني 🌐</h1>
-  <p>صممته بنفسي من الجوال!</p>
+
+<header>
+  <div class="logo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Saudi_Ministry_of_Health_Logo.svg/1200px-Saudi_Ministry_of_Health_Logo.svg.png" alt="شعار الصحة" width="30">
+    <span>صحة | Seha</span>
+  </div>
+  <div>&#9776;</div>
+</header>
+
+<h1>الإجازات المرضية</h1>
+
+<div class="container">
+  <p>خدمة الاستعلام عن الإجازات المرضية تتيح لك الاستعلام عن حالة طلبك للإجازة ويمكنك طباعتها عن طريق تطبيق صحتي</p>
+
+  <label for="service-code">رمز الخدمة</label>
+  <input type="text" id="service-code" placeholder="رمز الخدمة">
+
+  <label for="id-number">رقم الهوية / الإقامة</label>
+  <input type="text" id="id-number" placeholder="رقم الهوية / الإقامة">
+
+  <button>استعلام</button>
+  <button class="secondary">رجوع للاستعلامات</button>
+</div>
+
+<footer>
+  <div class="logos">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Saudi_Ministry_of_Health_Logo.svg/1200px-Saudi_Ministry_of_Health_Logo.svg.png" alt="وزارة الصحة">
+    <img src="https://lean.sa/wp-content/uploads/2021/10/logo.png" alt="لين">
+  </div>
+  <p>منصة صحة معتمدة من قبل وزارة الصحة © 2025</p>
+</footer>
+
 </body>
 </html>
